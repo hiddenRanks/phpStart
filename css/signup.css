@@ -7,7 +7,7 @@
 #loginBox {
 	margin-top: 100px;
 	width: 500px;
-	height: 220px;
+	height: 200px;
 	background-color: #fff;
 	box-shadow: 4px 4px 16px rgba(0,0,0,0.4);
 	position: relative;
@@ -53,9 +53,8 @@
 /*form: 전체 설정*/
 .login {
 	position: absolute;
-	width: 500px;
+	width: 100%;
 	height: 140px;
-	left: 10px;
 	top: 5px;
 }
 /*form: 전체 설정 끝*/
@@ -64,10 +63,10 @@
 /*form: 아이디, 이름, 비번 input 설정*/
 .input {
 	position: absolute;
-	width: 250px;
+	width: 60%;
 	height: 95%;
 	padding: 5px;
-	left: 140px;
+	left: 150px;
 }
 
 .input input {
@@ -119,10 +118,10 @@
 /*form: 회원가입 버튼 설정*/
 .signUp {
 	position: absolute;
-	width: 80%;
+	width: 150%;
 	height: 30px;
-	left: 35px;
-	bottom: -50px;
+	right: -30px;
+	bottom: -40px;
 	background-color: #ff0000b8;
 	border: none;
 	text-align: center;

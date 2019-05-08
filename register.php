@@ -42,13 +42,13 @@
 
 		    <div class="login">
 			    <div class="input">
-                    <form action="register_ok.php" method="post">
+                    <form action="/register_ok.php" method="post">
                         <input type="text" placeholder="아이디" name="id" class="idInput">
                         <input type="text" placeholder="이름" name="name" class="nameInput">
                         <input type="password" placeholder="비밀번호" name="password" class="pwInput">
+                        <input type="submit" value="회원가입" class="signUp">
                     </form>
 			    </div>
-			    <a href="/register_ok.php" class="signUp">회원가입</a>
 		    </div>
 	    </div>
 
