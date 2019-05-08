@@ -5,15 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>회원가입</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/signup.css">
 </head>
 <body>
-    <h1>회원가입</h1>
+    <header>
+        <div class="container">
+            <div class="logo">
+                창업 지원 펀드
+            </div>
 
-    <form action="register_ok.php" method="post">
-        아이디: <input type="text" name="id"> <br>
-        이름: <input type="text" name="name"> <br>
-        비밀번호: <input type="password" name="password"> <br>
-        <input type="submit" value="회원가입">
-    </form>
+            <nav>
+                <!-- isset => 무엇이 셋팅되어 있다면 -->
+                <?php if(isset($_SESSION['user'])) : ?>
+                    <div class="nav-btn">
+                        <span><?= $_SESSION['user']->name ?></span>
+                        <span><?= $_SESSION['user']->money ?></span>
+                        <a href="/logout.php" class="btn btn-red">로그아웃</a>
+                    </div>
+                <?php else : ?>
+                    <div class="nav-btn">
+                        <a href="/login.php" class="btn btn-blue">로그인</a>
+                        <a href="/register.php" class="btn btn-red">회원가입</a>
+                    </div>
+                <?php endif ?>
+            </nav>
+        </div>
+    </header>
+    <section id="content">
+        <div class="inner-content">
+            <div id="loginBox">
+                <div class="tagFront">
+                    <p>Fund Manager!</p>
+                </div>
+		    <div class="tagBack"></div>
+
+		    <div class="login">
+			    <div class="input">
+                    <form action="register_ok.php" method="post">
+                        <input type="text" placeholder="아이디" name="id" class="idInput">
+                        <input type="text" placeholder="이름" name="name" class="nameInput">
+                        <input type="password" placeholder="비밀번호" name="password" class="pwInput">
+                    </form>
+			    </div>
+			    <a href="/register_ok.php" class="signUp">회원가입</a>
+		    </div>
+	    </div>
+
+            <div class="logoText">
+                <p class="content">여러분의 투자를 쉽게 관리할수 있도록!</p>
+                <p class="companyName">Fund Manager</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="toastList">
+        
+    </div>
 </body>
 </html>

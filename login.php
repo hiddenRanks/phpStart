@@ -18,6 +18,22 @@
             <div class="logo">
                 창업 지원 펀드
             </div>
+
+			<nav>
+                <!-- isset => 무엇이 셋팅되어 있다면 -->
+                <?php if(isset($_SESSION['user'])) : ?>
+                    <div class="nav-btn">
+                        <span><?= $_SESSION['user']->name ?></span>
+                        <span><?= $_SESSION['user']->money ?></span>
+                        <a href="/logout.php" class="btn btn-red">로그아웃</a>
+                    </div>
+                <?php else : ?>
+                    <div class="nav-btn">
+                        <a href="/login.php" class="btn btn-blue">로그인</a>
+                        <a href="/register.php" class="btn btn-red">회원가입</a>
+                    </div>
+                <?php endif ?>
+            </nav>
         </div>
     </header>
     <section id="content">
@@ -30,7 +46,7 @@
 
 				<div class="login">
 					<div class="input">
-						<form action="register_ok.php" method="post">
+						<form action="login_ok.php" method="post">
 							<input type="text" placeholder="아이디" name="id" class="idInput">
 							<input type="password" placeholder="비밀번호" name="password" class="pwInput">
 						</form>
