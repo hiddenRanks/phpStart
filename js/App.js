@@ -5,7 +5,7 @@ class App {
         this.fundCnt = 1; //현재 펀드번호
 
         //private list nav = document.querySelectorAll
-        this.nav = document.querySelectorAll("nav > ul > a");
+        this.nav = document.querySelectorAll("nav > ul > li > a");
 
         this.nav.forEach(x => {
             x.addEventListener("click", this.changeMenu.bind(this)); //bind: 묶어주다.

@@ -85,6 +85,7 @@ nav a.active {
     min-height: 600px;
     position: relative;
     overflow: hidden;
+    z-index: 0;
 }
 
 article {

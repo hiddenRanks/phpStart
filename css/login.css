@@ -1,0 +1,160 @@
+* {
+	margin: 0 auto;
+}
+
+/*전체 설정*/
+#loginBox {
+	margin-top: 100px;
+	width: 500px;
+	height: 160px;
+	background-color: #fff;
+	box-shadow: 4px 4px 16px rgba(0,0,0,0.4);
+	position: relative;
+}
+/*전체 설정 끝*/
+
+
+/*태그 설정*/
+.tagFront {
+	position: absolute;
+	width: 150px;
+	height: 40px;
+	left: -30px; top: 15px;
+	background-color: #00bcff;
+	border-radius: 6px 0 0;
+	box-shadow: 2px 2px 6px #dfdfdf;
+	z-index: 1;
+}
+
+.tagFront > p {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 17px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.tagBack {
+	position: absolute;
+	width: 150px;
+	height: 40px;
+	left: -29px; top: 48px;
+	background-color: #00bcff;
+	border-radius: 6px 0 0;
+	transform: rotate(25deg);
+	z-index: -1;
+}
+/*태그 설정 끝*/
+
+
+/*form: 전체 설정*/
+.login {
+	position: absolute;
+	width: 500px;
+	height: 100px;
+	left: 10px;
+	top: 5px;
+}
+/*form: 전체 설정 끝*/
+
+
+/*form: 아이디, 비번 input 설정*/
+.input {
+	position: absolute;
+	width: 250px;
+	padding: 5px;
+	left: 140px;
+}
+
+.idInput {
+	width: 200px;
+	height: 30px;
+	border: 1px solid #dadce0;
+	border-radius: 2px;
+	margin-top: 8px;
+}
+
+.idInput:hover {
+	border: 2px solid skyblue;
+	border-radius: 1px;
+}
+
+.pwInput {
+	width: 200px;
+	height: 30px;
+	border: 1px solid #dadce0;
+	border-radius: 2px;
+	margin-top: 10px;
+}
+
+.pwInput:hover {
+	border: 2px solid skyblue;
+	border-radius: 1px;
+}
+/*form: 아이디, 비번 input 설정 끝*/
+
+
+/*form: 로그인 버튼 설정*/
+.loginBtn {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	background-color: #00bcff;
+	border: none;
+	border-radius: 8px;
+	right: 40px; top: 10px;
+	text-align: center;
+	line-height: 80px;
+	font-size: 22px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.loginBtn:hover { background-color: #00bcffc2; }
+/*form: 로그인 버튼 설정 끝*/
+
+
+/*form: 회원가입 버튼 설정*/
+.signUp {
+	position: absolute;
+	width: 80%;
+	height: 30px;
+	left: 35px;
+	bottom: -35px;
+	background-color: #ff0000b8;
+	border: none;
+	text-align: center;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 18px;
+	color: #fff;
+}
+
+.signUp:hover {
+	background-color: #ff0000cf;
+}
+/*form: 회원가입 버튼 설정 끝*/
+
+
+/*텍스트 로고*/
+.logoText {
+	position: absolute;
+	top: 60%; left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.logoText > .content {
+	font-weight: 800;
+	font-size: 35px;
+}
+
+.logoText > .companyName {
+	margin-top: 30px;
+	font-weight: bold;
+	font-size: 40px;
+	color: #009fe3;
+}
+/*텍스트 로고 끝*/

@@ -27,7 +27,7 @@
                     <li><a href="#" data-target="investor">투자자 목록</a></li>
                 </ul>
 
-                <?php //isset => 무엇이 셋팅되어 있다면 ?>
+                <!-- isset => 무엇이 셋팅되어 있다면 -->
                 <?php if(isset($_SESSION['user'])) : ?>
                     <div class="nav-btn">
                         <span><?= $_SESSION['user']->name ?></span>
