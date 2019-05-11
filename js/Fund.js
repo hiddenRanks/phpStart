@@ -1,10 +1,10 @@
 class Fund {
-    constructor(number, name, endDate, total){
+    constructor(number, name, endDate, total, current = 0){
         this.number = number;
         this.name = name;
         this.endDate = endDate;
         this.total = total * 1;
-        this.current = 0;
+        this.current = current * 1; //형변환
         this.canvas = null;
     }
 
@@ -25,7 +25,7 @@ class Fund {
         
         let x = this.canvas.width / 2;
         let y = this.canvas.height / 2;
-        let r = x - 50; //전체 너비보다 30픽셀 작게 설정
+        let r = x - 50; //전체 너비보다 50픽셀 작게 설정
         let PI = Math.PI;
         let p = Math.floor(this.current / this.total * 100); 
         
